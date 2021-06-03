@@ -8,8 +8,11 @@ const viewRouter=require('./routes/viewRoute');
 const globalErrorHander=require('./controller/errorContoller');
 const cookieParser=require('cookie-parser');
 const compression=require('compression');
+const cors=require('cors');
 
 const app=express();
+
+//app.use(cors()); cors not needed bcoz backend provides html pages
 
 app.set('view engine','pug');
 app.set('views',`${__dirname}/views`);
