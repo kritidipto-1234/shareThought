@@ -7,6 +7,7 @@ const postRouter=require('./routes/postRoute');
 const viewRouter=require('./routes/viewRoute');
 const globalErrorHander=require('./controller/errorContoller');
 const cookieParser=require('cookie-parser');
+constcompression=require('compression');
 
 const app=express();
 
@@ -18,6 +19,7 @@ app.use(morgan('dev'));
 
 app.use(express.json());
 app.use(cookieParser());
+app.use(compression());
 app.use((req,res,next)=>
 {
     next();
