@@ -15,7 +15,7 @@ app.set('view engine','pug');
 app.set('views',`${__dirname}/views`);
 app.use(morgan('dev'));
 
-
+app.enable('trust proxy');
 
 app.use(express.json());
 app.use(cookieParser());
