@@ -68,7 +68,8 @@ header,footer
     align-items: center;
     display: flex;
     font-size: 13px;
-    width:100px;
+    min-width:80px;
+    max-width: 120px;
     height: 20px;
     padding: 3px;
 }
