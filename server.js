@@ -13,7 +13,7 @@ app.listen(process.env.PORT,()=>
     console.log(`App running on port : ${process.env.PORT}`);
 })
 
-prcoess.on('unhandledRejection',err=>
+process.on('unhandledRejection',err=>
 {
     console.log('Unhandled Rejection .Shutting down');
     console.log(err);
