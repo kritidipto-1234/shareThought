@@ -15,8 +15,8 @@ async function sendMail(template,options)
             user:process.env.EMAIL_USERNAME,
             pass:process.env.EMAIL_PASSWORD
         },
-        logger:true,
-        debug:true
+        logger:false,
+        debug:false
     });
     
     const html=pug.renderFile(`${__dirname}/../views/email/${template}.pug`,
