@@ -4,7 +4,7 @@ header>div>span
 }
 header>div>span.pageLink
 {
-    padding: 5px;
+    padding: 3px 10px;
     border: 3px solid white;
 }
 
@@ -23,6 +23,13 @@ header,footer
     margin-bottom: 0px;
     margin-top: 20px;
     max-height: 190px;
+    font-size: 14px;
+    word-break: break-all;
+    /* word-wrap: break-word; */
+}
+.post .postUserName
+{
+    font-size: 12px;
 }
 .post .postDate
 {
