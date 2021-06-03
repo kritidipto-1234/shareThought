@@ -224,8 +224,8 @@ textarea.postContent
     margin: 40px auto;
     margin-bottom: 0px;
     display: grid;
-    min-height:100px;
-    grid-template-rows: 1fr 2.5fr;
+    height:120px;
+    font-size: 14px;
     grid-template-columns: 1fr 2fr 1fr;
 }
 .post>div{
@@ -250,7 +250,7 @@ textarea.postContent
 }
 .post>.postContent
 {
-    height: 100px;
+    height: 80px;
     grid-column-start: 1;
     grid-column-end: 4;
     display: flex;

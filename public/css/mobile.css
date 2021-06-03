@@ -1,0 +1,127 @@
+header>div>span
+{
+    font-size: 16px;
+}
+
+header,footer
+{
+    height: 10vh;
+}
+
+.contentContainer
+{
+    height: 80vh;
+}
+
+.post
+{
+    margin-bottom: 0px;
+    margin-top: 20px;
+    max-height: 190px;
+}
+.post .postDate
+{
+    font-size: 10px;
+}
+.post .postContent
+{
+    max-height: 150px;
+}
+.post:first-child
+{
+    margin-top:30px ;
+}
+
+/* globalPage  */
+.globalPageContainer
+{
+    flex-direction: column-reverse;
+}
+.globalPageContainer .writePost button
+{
+    margin-bottom: 20px;
+}
+.globalPageContainer .writePost textarea
+{
+    height:130px;
+}
+
+ .allPosts
+{
+}
+.allPosts::before
+{
+    left:50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 13px;
+    width:100px;
+    height: 20px;
+    padding: 3px;
+}
+/* globalPage  */
+
+ .userInfo .info
+ {
+     font-size: 14px;
+     margin: 13px 10px 0px 10px;
+ }
+ .userInfo::before
+ {
+    left:50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 12px;
+    width:100px;
+    height: 18px;
+    padding: 3px;
+    z-index: 1000;
+ }
+
+/* accountPage */
+.userProfileContainer
+{
+    flex-direction: column-reverse;
+}
+
+.userProfileContainer .allPosts::before
+{
+    left :50%;
+}
+/* accountPage */
+
+/* myPage */
+.myProfileContainer .userInfo
+{
+    margin-bottom: 50px;
+    border: none;
+}
+.myProfileContainer .editAccountBtn,.myProfileContainer .deleteAccountBtn
+{
+    min-width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    bottom: 20px;
+}
+.myProfileContainer .deleteAccountBtn
+{
+    right:20px;
+    left:auto;
+}
+.myProfileContainer
+{
+}
+/* myPage */
+
+
+
+footer
+{
+    text-align: center;
+    font-size: 14px;
+    padding: 1px 20px;
+}
