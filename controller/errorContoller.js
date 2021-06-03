@@ -27,10 +27,7 @@ function sendProdError(req,res,err)
 const globalErrorHander=function(err,req,res,next)
 {
     err.statusCode=err.statusCode||500;
-    if (process.env.NODE_ENV==='development')
-        sendDevError(req,res,err);
-    if (process.env.NODE_ENV==='production')
-        sendProdError(req,res,err);
+    sendDevError(req,res,err);
 }
 
 module.exports=globalErrorHander;
