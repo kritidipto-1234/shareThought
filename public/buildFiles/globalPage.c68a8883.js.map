@@ -1,1 +1,0 @@
-{"version":3,"sources":["globalPage.js"],"names":["console","log"],"mappings":"AAAAA,OAAO,CAACC,GAAR,CAAY,aAAZ;AACAD,OAAO,CAACC,GAAR,CAAY,IAAZ","file":"globalPage.c68a8883.js","sourceRoot":"../js","sourcesContent":["console.log(\"global Page\");\nconsole.log(\"hi\");"]}
