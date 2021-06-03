@@ -7,7 +7,7 @@ const postRouter=require('./routes/postRoute');
 const viewRouter=require('./routes/viewRoute');
 const globalErrorHander=require('./controller/errorContoller');
 const cookieParser=require('cookie-parser');
-constcompression=require('compression');
+const compression=require('compression');
 
 const app=express();
 
