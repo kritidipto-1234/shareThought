@@ -1,0 +1,443 @@
+body
+{
+    margin: 0;
+    height: 100vh;
+    width:100vw;
+}
+*{
+    box-sizing: border-box;
+}
+button
+{
+    cursor: pointer;
+}
+input
+{
+    outline: none;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+textarea{
+    outline: none;
+}
+
+
+/* header */
+header
+{
+    background-color: rgb(99, 184, 43);
+    display: flex;
+    height:15%;
+    width:100%;
+    color:white;
+    font-size: 30px;
+    font-weight: bolder;
+}
+header>div{
+    width:50%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header>div>span.pageLink{
+    transition: all 0.2s;
+    border:5px solid white;
+    padding: 7px 20px;
+    border-radius: 36px;
+}
+header>div>span.pageLink:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+/* header */
+
+
+/* content */
+.contentContainer
+{
+    height:70%;
+    width:100%;
+    background-color: greenyellow;
+}
+.contentContainer h1{
+    margin: 0px;
+}
+/* content */
+
+/* footer */
+footer
+{
+    height: 15%;
+    width: 100%;
+    background-color: gray;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* footer */
+
+
+/* message */
+.message
+{
+    background-color: green;
+    color: white;
+    position: fixed;
+    display: none;
+    top:50%;
+    font-size: 22px;
+    word-break: break-all;
+    word-wrap:break-word ;
+    z-index: 2000;
+    max-width: 400px;
+    left:50%;
+    transform: translate(-50%,-50%);
+    padding:30px;
+    text-align: center;
+}
+/* message */
+
+
+
+/* landingPage */
+.formHolders{
+    width:100%;
+    height:100%;
+    align-items: center;
+}
+.formHolders .formButtonTray
+{
+    background-color: greenyellow;
+    margin: auto;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+}
+.formHolders .formButtonTray button
+{
+    
+}
+.formHolders>div{
+    margin: auto;
+    width: 300px;
+    display: flex;
+    height: 350px;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    align-items: center;
+}
+.formHolders>div input,.formHolders>div button{
+    margin:5px 10px;
+}
+/* landingPage */
+
+
+
+/* resetPasswordPage */
+.resetPasswordForm
+{
+    margin: auto;
+    width: 300px;
+    display: flex;
+    height: 350px;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    align-items: center;
+}
+.resetPasswordForm input,.resetPasswordForm button{
+    margin:5px 10px;
+}
+/* resetPasswordPage */
+
+
+/* globalPage */
+.globalPageContainer{
+    height:100%;
+    display: flex;
+}
+.globalPageContainer .allPosts{
+    flex:2;
+    border: 1px solid white;
+}
+.globalPageContainer .writePost
+{
+    border: 1px solid white;
+    flex:1;
+}
+.allPosts
+{
+    overflow: scroll;
+    position: relative;
+}
+.allPosts::before
+{
+    font-size: large;
+    position: fixed;
+    content: 'All Posts';
+    z-index: 1000;
+    background-color: green;
+    color: white;
+    left:33%;
+    font-weight: bolder;
+    width:200px;
+    height: 25px;
+    padding: 10px;
+    text-align: center;
+    transform: translate(-50%,-50%);
+}
+.posterForm{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    flex-direction: column;
+}
+textarea.postContent
+{
+    margin: 20px auto;
+    width: 220px;
+    padding: 13px;
+    height:200px;
+}
+.postBtn
+{
+    width: 220px;
+    margin: auto;
+}
+/* globalPage */
+
+
+
+/* post */
+.post{
+    text-align: center;
+    position: relative;
+    width: 80%;
+    margin: 40px auto;
+    margin-bottom: 0px;
+    display: grid;
+    min-height:100px;
+    grid-template-rows: 1fr 2.5fr;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+.post>div{
+    padding: 5px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+}
+.post>.postUserName
+{
+    color: green;
+    font-weight: bolder;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+.post>.postUserName:hover
+{
+    background-color: green;
+    color: white;
+}
+.post>.postContent
+{
+    height: 100px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: flex;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    justify-content: center;
+    align-items: center;
+}
+.post .deletePostBtn
+{
+    margin: 0px;
+    color: rgb(36, 122, 43);
+    cursor: pointer;
+    font-weight: bolder;
+    border-radius: 23px;
+    padding: 7px;
+    border: 3px solid rgb(36, 122, 43);
+}
+.post .deletePostBtn:hover
+{
+    color: white;
+    background-color: rgb(36, 122, 43);
+    opacity: 0.9;
+}
+.post{
+    /* border: 1px solid black; */
+}
+/* post */
+
+
+
+/* userProfilePage */
+.userProfileContainer
+{
+    display: flex;
+    width:100%;
+    height: 100%;
+}
+.userProfileContainer>div
+{
+    border: 1px solid white;
+}
+.userProfileContainer .userInfo
+{
+    flex:1;
+}
+.userProfileContainer .allPosts
+{
+    flex: 2;
+}
+.userProfileContainer .allPosts::before
+{
+    left: 67%;
+    content: 'User Post History';
+}
+.userInfo
+{
+    position: relative;
+}
+.userInfo::before
+{
+    content: 'User Info';
+    font-size: large;
+    position: fixed;
+    background-color: green;
+    color: white;
+    left:17%;
+    font-weight: bolder;
+    width:200px;
+    height: 25px;
+    padding: 10px;
+    text-align: center;
+    transform: translate(-50%,-50%);
+}
+ .info
+{
+    font-size: large;
+    margin: 30px 10px;
+}
+.info .type
+{
+    color: rgb(25, 87, 25);
+    font-weight: bolder;
+}
+/* userProfilePage */
+
+
+
+/* myAccountPage */
+.myProfileContainer
+{
+    position: relative;
+}
+.myProfileContainer .deleteAccountBtn,.myProfileContainer .editAccountBtn
+{
+    position: absolute;
+    left:20px;
+    border: 3px solid white;
+    padding: 8px;
+    cursor: pointer;
+    color: rgb(14, 79, 14);
+    border-radius: 23px;
+    font-weight: bolder;
+    bottom:70px;
+    transition: all 0.2s;
+}
+.myProfileContainer .deleteAccountBtn:hover,.myProfileContainer .editAccountBtn:hover
+{
+    transform: scale(1.1);
+}
+.myProfileContainer .editAccountBtn
+{
+    bottom: 130px;
+}
+.myProfileContainer .userInfo::before
+{
+    content: 'My Profile';
+}
+.myProfileContainer .allPosts::before
+{
+    content: 'My Posts';
+}
+.myProfileContainer .overlay
+{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0.5;
+    display: none;
+    top:0;
+    z-index: 1001;
+    left:0;
+    background-color: rgba(0,0,0);
+}
+.myProfileContainer .deleteAccountForm
+{
+    position: fixed;
+    display: none;
+    left:50%;
+    z-index: 1002;
+    padding: 20px;
+    top:50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+}
+.myProfileContainer .deleteAccountForm button,.myProfileContainer .deleteAccountForm input
+{
+    margin: 20px;
+}
+.myProfileContainer .deleteAccountForm .closeDeleteAccountForm
+{
+    position: absolute;
+    font-size: 20px;
+    right:20px;
+    top:20px;
+    cursor: pointer;
+}
+.myProfileContainer .editAccountForm
+{
+    position: fixed;
+    display: none;
+    left:50%;
+    z-index: 1002;
+    padding: 20px;
+    top:50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+}
+.myProfileContainer .editAccountForm .closeEditAccountForm
+{
+    position: absolute;
+    font-size: 20px;
+    right:20px;
+    top:20px;
+    cursor: pointer;
+}
+.myProfileContainer .editAccountForm input,.myProfileContainer .editAccountForm button
+{
+    margin: 5px;
+}
+.myProfileContainer .editAccountForm input
+{
+    width: 250px;
+}
+/* myAccountPage */
+
+
+
+

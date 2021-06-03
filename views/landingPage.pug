@@ -1,0 +1,25 @@
+extends base
+
+block content 
+    div.formHolders
+        div.formButtonTray
+            button.loginFormBtn(type="button") Login 
+            button.signUpFormBtn(type="button") SignUp 
+            button.forgotPasswordFormBtn(type="button") ForgotPassword
+        div.loginForm()
+            h3 Login Form 
+            input.email(placeholder="Email")
+            input.password(placeholder="Password")
+            button.loginBtn(type="button") Login
+        div.signUpForm(style="display:none;")
+            h3 SignUp Form
+            input.name(placeholder="Name")
+            input.email(placeholder="Email")
+            input.description(placeholder="Description")
+            input.password(placeholder="Password")
+            input.passwordConfirm(placeholder="Confirm Password")
+            button.signUpBtn(type="button") Sign Up
+        div.forgotPasswordForm(style="display:none;")
+            h3 ForgotPassword Form 
+            input.email(placeholder="Email")
+            button.forgotPasswordBtn(type="button") Request Change 

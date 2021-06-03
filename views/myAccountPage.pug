@@ -1,0 +1,42 @@
+extends base
+
+block content 
+    div(class="userProfileContainer myProfileContainer")
+        div.userInfo 
+        div.allPosts
+        div.editAccountBtn EDIT ACCOUNT
+        div.deleteAccountBtn DELETE ACCOUNT 
+        div.overlay
+        div.deleteAccountForm
+            div.closeDeleteAccountForm x
+            h3 Delete Account 
+            div Your Password is needed to delete account.Once you delete your account all posts are deleted it cant be retreived
+            input.password(placeholder='Enter your password')
+            br
+            button.cancelDeleteAccount(type="button") Cancel
+            button.confirmDeleteAccount(type="button") Confirm Delete
+        div.editAccountForm
+            div.closeEditAccountForm x 
+            h3 Edit Account 
+            h4 User Details 
+            label Name
+            input.name( placeholder="Enter new name")
+            br
+            label Email 
+            input.email( placeholder="Enter new email")
+            br
+            label Description
+            input.description( placeholder="Enter new description")
+            br
+            h4 Change Password
+            input.newPassword(placeholder="Enter new password (optional)")
+            br
+            input.newPasswordConfirm(placeholder="Confirm new password (optional)")
+            hr
+            div Your account password is needed to edit account details 
+            input.currentPassword(placeholder='Enter your password')
+            br
+            button.cancelEditAccount(type="button") Cancel 
+            button.confirmEditAccount(type="button") Submit Changes 
+
+            
