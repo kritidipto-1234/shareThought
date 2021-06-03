@@ -8,7 +8,7 @@ mongoose.connect(DB,{useNewUrlParser: true,useCreateIndex:true, useUnifiedTopolo
 .then(()=>console.log('DB successfully connected'))
 .catch(console.log);
 
-app.listen(process.env.PORT,()=>
+const server=app.listen(process.env.PORT,()=>
 {
     console.log(`App running on port : ${process.env.PORT}`);
 })
