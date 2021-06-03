@@ -28,6 +28,7 @@ async function login(e)
     {
         const email=loginForm.querySelector('.email').value;
         const password=loginForm.querySelector('.password').value;
+        console.log(config.URL);
         const result=await axios(
         {
             method:'POST',
