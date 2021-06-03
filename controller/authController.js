@@ -66,6 +66,7 @@ exports.forgotPassword=catchAsync(async(req,res,next)=>
     
     try
     {
+        console.log(req.protocol,req.get('host'));
         const url=`${req.protocol}://${req.get('host')}/api/users/changePassword/${resetToken}`;
         const message=`To change ur password click on this button.`;
         await sendEmail('resetPassword',
