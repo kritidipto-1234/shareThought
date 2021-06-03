@@ -13,3 +13,15 @@ app.listen(process.env.PORT,()=>
     console.log(`App running on port : ${process.env.PORT}`);
 })
 
+prcoess.on('unhandledRejection',err=>
+{
+    console.log('Unhandled Rejection .Shutting down');
+    console.log(err);
+    server.close(()=>process.exit(1));
+})
+
+process.on('SIGTERM',err=>
+{
+    console.log('SIGTERM SIGNAL received .Shutting down');
+    server.close(()=>console.log('Process terminated'));
+});
