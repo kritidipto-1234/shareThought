@@ -13,7 +13,7 @@ const userSchema=new mongoose.Schema({
     },
     name:{type:String,required:[true,'Name required']},
     password:{type:String,minlength:8,required:[true,'Password required']},
-    description:{type:String,maxlenght:50},
+    description:{type:String,maxlenght:35},
     passwordConfirm:
     {
         type:String,required:[true,'Confirm Password required'],

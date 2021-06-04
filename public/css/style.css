@@ -297,6 +297,8 @@ textarea.postContent
 .userProfileContainer .userInfo
 {
     flex:1;
+    max-width: 33%;
+    word-break: break-all;
 }
 .userProfileContainer .allPosts
 {

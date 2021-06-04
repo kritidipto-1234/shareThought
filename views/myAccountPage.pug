@@ -11,7 +11,7 @@ block content
             div.closeDeleteAccountForm x
             h3 Delete Account 
             div Your Password is needed to delete account.Once you delete your account all posts are deleted it cant be retreived
-            input.password(placeholder='Enter your password')
+            input.password(type="password" placeholder='Enter your password')
             br
             button.cancelDeleteAccount(type="button") Cancel
             button.confirmDeleteAccount(type="button") Confirm Delete
@@ -29,12 +29,12 @@ block content
             input.description( placeholder="Enter new description")
             br
             h4 Change Password
-            input.newPassword(placeholder="Enter new password (optional)")
+            input.newPassword(type="password" placeholder="Enter new password (optional)")
             br
-            input.newPasswordConfirm(placeholder="Confirm new password (optional)")
+            input.newPasswordConfirm(type="password" placeholder="Confirm new password (optional)")
             hr
             div Your account password is needed to edit account details 
-            input.currentPassword(placeholder='Enter your password')
+            input.currentPassword(type="password" placeholder='Enter your password')
             br
             button.cancelEditAccount(type="button") Cancel 
             button.confirmEditAccount(type="button") Submit Changes 
