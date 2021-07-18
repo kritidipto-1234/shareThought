@@ -1,75 +1,70 @@
-body
-{
+body {
     margin: 0;
-    height: 100vh;
-    width:100vw;
+    height: 100%;
+    width: 100vw;
 }
-*{
+html {
+    height: 100%;
+}
+* {
     box-sizing: border-box;
 }
-button
-{
+button {
     cursor: pointer;
 }
-input
-{
+input {
     outline: none;
 }
 ::-webkit-scrollbar {
     display: none;
 }
-textarea{
+textarea {
     outline: none;
 }
 
-
 /* header */
-header
-{
+header {
     background-color: rgb(99, 184, 43);
     display: flex;
-    height:15%;
-    width:100%;
-    color:white;
+    height: 15%;
+    width: 100%;
+    color: white;
     font-size: 30px;
     font-weight: bolder;
 }
-header>div{
-    width:50%;
-    height:100%;
+header > div {
+    width: 50%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-header>div>span.pageLink{
+header > div > span.pageLink {
     transition: all 0.2s;
-    border:5px solid white;
+    border: 5px solid white;
     padding: 7px 20px;
     border-radius: 36px;
 }
-header>div>span.pageLink:hover{
+header > div > span.pageLink:hover {
     cursor: pointer;
     transform: scale(1.1);
 }
 /* header */
 
-
 /* content */
-.contentContainer
-{
-    height:70%;
-    width:100%;
+.contentContainer {
+    height: 70%;
+    width: 100%;
     background-color: greenyellow;
 }
-.contentContainer h1{
+.contentContainer h1 {
     margin: 0px;
 }
 /* content */
 
 /* footer */
-footer
-{
+footer {
     height: 15%;
     width: 100%;
     background-color: gray;
@@ -80,50 +75,43 @@ footer
 }
 /* footer */
 
-
 /* message */
-.message
-{
+.message {
     background-color: green;
     color: white;
     position: fixed;
     display: none;
-    top:50%;
+    top: 50%;
     font-size: 22px;
     word-break: break-all;
-    word-wrap:break-word ;
+    word-wrap: break-word;
     z-index: 2000;
     max-width: 400px;
-    left:50%;
-    transform: translate(-50%,-50%);
-    padding:30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
     text-align: center;
 }
 /* message */
 
-
-
 /* landingPage */
-.formHolders{
-    width:100%;
-    height:100%;
+.formHolders {
+    width: 100%;
+    height: 100%;
     align-items: center;
 }
-.formHolders .formButtonTray
-{
+.formHolders .formButtonTray {
     background-color: greenyellow;
     margin: auto;
     height: 100px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items:center;
+    align-items: center;
 }
-.formHolders .formButtonTray button
-{
-    
+.formHolders .formButtonTray button {
 }
-.formHolders>div{
+.formHolders > div {
     margin: auto;
     width: 300px;
     display: flex;
@@ -133,16 +121,14 @@ footer
     background-color: white;
     align-items: center;
 }
-.formHolders>div input,.formHolders>div button{
-    margin:5px 10px;
+.formHolders > div input,
+.formHolders > div button {
+    margin: 5px 10px;
 }
 /* landingPage */
 
-
-
 /* resetPasswordPage */
-.resetPasswordForm
-{
+.resetPasswordForm {
     margin: auto;
     width: 300px;
     display: flex;
@@ -153,82 +139,75 @@ footer
     background-color: white;
     align-items: center;
 }
-.resetPasswordForm input,.resetPasswordForm button{
-    margin:5px 10px;
+.resetPasswordForm input,
+.resetPasswordForm button {
+    margin: 5px 10px;
 }
 /* resetPasswordPage */
 
-
 /* globalPage */
-.globalPageContainer{
-    height:100%;
+.globalPageContainer {
+    height: 100%;
     display: flex;
 }
-.globalPageContainer .allPosts{
-    flex:2;
+.globalPageContainer .allPosts {
+    flex: 2;
     border: 1px solid white;
 }
-.globalPageContainer .writePost
-{
+.globalPageContainer .writePost {
     border: 1px solid white;
-    flex:1;
+    flex: 1;
 }
-.allPosts
-{
+.allPosts {
     overflow: scroll;
     position: relative;
 }
-.allPosts::before
-{
+.allPosts::before {
     font-size: large;
     position: fixed;
-    content: 'All Posts';
+    content: "All Posts";
     z-index: 1000;
     background-color: green;
     color: white;
-    left:33%;
+    left: 33%;
     font-weight: bolder;
-    width:200px;
+    width: 200px;
     height: 25px;
     padding: 10px;
     text-align: center;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
-.posterForm{
+.posterForm {
     display: flex;
     width: 80%;
     margin: auto;
     flex-direction: column;
 }
-textarea.postContent
-{
+textarea.postContent {
     margin: 20px auto;
     width: 220px;
     padding: 13px;
-    height:200px;
+    height: 200px;
 }
-.postBtn
-{
+.postBtn {
     width: 220px;
     margin: auto;
 }
 /* globalPage */
 
-
-
 /* post */
-.post{
+.post {
     text-align: center;
     position: relative;
     width: 80%;
     margin: 40px auto;
     margin-bottom: 0px;
     display: grid;
-    height:120px;
+    height: 120px;
     font-size: 14px;
     grid-template-columns: 1fr 2fr 1fr;
 }
-.post>div{
+.post > div {
     padding: 5px;
     overflow: hidden;
     display: flex;
@@ -236,20 +215,17 @@ textarea.postContent
     align-items: center;
     border: 1px solid white;
 }
-.post>.postUserName
-{
+.post > .postUserName {
     color: green;
     font-weight: bolder;
     transition: all 0.2s;
     cursor: pointer;
 }
-.post>.postUserName:hover
-{
+.post > .postUserName:hover {
     background-color: green;
     color: white;
 }
-.post>.postContent
-{
+.post > .postContent {
     height: 80px;
     grid-column-start: 1;
     grid-column-end: 4;
@@ -260,8 +236,7 @@ textarea.postContent
     justify-content: center;
     align-items: center;
 }
-.post .deletePostBtn
-{
+.post .deletePostBtn {
     margin: 0px;
     color: rgb(36, 122, 43);
     cursor: pointer;
@@ -270,176 +245,148 @@ textarea.postContent
     padding: 7px;
     border: 3px solid rgb(36, 122, 43);
 }
-.post .deletePostBtn:hover
-{
+.post .deletePostBtn:hover {
     color: white;
     background-color: rgb(36, 122, 43);
     opacity: 0.9;
 }
-.post{
+.post {
     /* border: 1px solid black; */
 }
 /* post */
 
-
-
 /* userProfilePage */
-.userProfileContainer
-{
+.userProfileContainer {
     display: flex;
-    width:100%;
+    width: 100%;
     height: 100%;
 }
-.userProfileContainer>div
-{
+.userProfileContainer > div {
     border: 1px solid white;
 }
-.userProfileContainer .userInfo
-{
-    flex:1;
+.userProfileContainer .userInfo {
+    flex: 1;
     max-width: 33%;
     word-break: break-all;
 }
-.userProfileContainer .allPosts
-{
+.userProfileContainer .allPosts {
     flex: 2;
 }
-.userProfileContainer .allPosts::before
-{
+.userProfileContainer .allPosts::before {
     left: 67%;
-    content: 'User Post History';
+    content: "User Post History";
 }
-.userInfo
-{
+.userInfo {
     position: relative;
 }
-.userInfo::before
-{
-    content: 'User Info';
+.userInfo::before {
+    content: "User Info";
     font-size: large;
     position: fixed;
     background-color: green;
     color: white;
-    left:17%;
+    left: 17%;
     font-weight: bolder;
-    width:200px;
+    width: 200px;
     height: 25px;
     padding: 10px;
     text-align: center;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
- .info
-{
+.info {
     font-size: large;
     margin: 30px 10px;
 }
-.info .type
-{
+.info .type {
     color: rgb(25, 87, 25);
     font-weight: bolder;
 }
 /* userProfilePage */
 
-
-
 /* myAccountPage */
-.myProfileContainer
-{
+.myProfileContainer {
     position: relative;
 }
-.myProfileContainer .deleteAccountBtn,.myProfileContainer .editAccountBtn
-{
+.myProfileContainer .deleteAccountBtn,
+.myProfileContainer .editAccountBtn {
     position: absolute;
-    left:20px;
+    left: 20px;
     border: 3px solid white;
     padding: 8px;
     cursor: pointer;
     color: rgb(14, 79, 14);
     border-radius: 23px;
     font-weight: bolder;
-    bottom:70px;
+    bottom: 70px;
     transition: all 0.2s;
 }
-.myProfileContainer .deleteAccountBtn:hover,.myProfileContainer .editAccountBtn:hover
-{
+.myProfileContainer .deleteAccountBtn:hover,
+.myProfileContainer .editAccountBtn:hover {
     transform: scale(1.1);
 }
-.myProfileContainer .editAccountBtn
-{
+.myProfileContainer .editAccountBtn {
     bottom: 130px;
 }
-.myProfileContainer .userInfo::before
-{
-    content: 'My Profile';
+.myProfileContainer .userInfo::before {
+    content: "My Profile";
 }
-.myProfileContainer .allPosts::before
-{
-    content: 'My Posts';
+.myProfileContainer .allPosts::before {
+    content: "My Posts";
 }
-.myProfileContainer .overlay
-{
+.myProfileContainer .overlay {
     position: fixed;
     height: 100vh;
     width: 100vw;
     opacity: 0.5;
     display: none;
-    top:0;
+    top: 0;
     z-index: 1001;
-    left:0;
-    background-color: rgba(0,0,0);
+    left: 0;
+    background-color: rgba(0, 0, 0);
 }
-.myProfileContainer .deleteAccountForm
-{
+.myProfileContainer .deleteAccountForm {
     position: fixed;
     display: none;
-    left:50%;
+    left: 50%;
     z-index: 1002;
     padding: 20px;
-    top:50%;
-    transform: translate(-50%,-50%);
+    top: 50%;
+    transform: translate(-50%, -50%);
     background-color: white;
 }
-.myProfileContainer .deleteAccountForm button,.myProfileContainer .deleteAccountForm input
-{
+.myProfileContainer .deleteAccountForm button,
+.myProfileContainer .deleteAccountForm input {
     margin: 20px;
 }
-.myProfileContainer .deleteAccountForm .closeDeleteAccountForm
-{
+.myProfileContainer .deleteAccountForm .closeDeleteAccountForm {
     position: absolute;
     font-size: 20px;
-    right:20px;
-    top:20px;
+    right: 20px;
+    top: 20px;
     cursor: pointer;
 }
-.myProfileContainer .editAccountForm
-{
+.myProfileContainer .editAccountForm {
     position: fixed;
     display: none;
-    left:50%;
+    left: 50%;
     z-index: 1002;
     padding: 20px;
-    top:50%;
-    transform: translate(-50%,-50%);
+    top: 50%;
+    transform: translate(-50%, -50%);
     background-color: white;
 }
-.myProfileContainer .editAccountForm .closeEditAccountForm
-{
+.myProfileContainer .editAccountForm .closeEditAccountForm {
     position: absolute;
     font-size: 20px;
-    right:20px;
-    top:20px;
+    right: 20px;
+    top: 20px;
     cursor: pointer;
 }
-.myProfileContainer .editAccountForm input,.myProfileContainer .editAccountForm button
-{
+.myProfileContainer .editAccountForm input,
+.myProfileContainer .editAccountForm button {
     margin: 5px;
 }
-.myProfileContainer .editAccountForm input
-{
+.myProfileContainer .editAccountForm input {
     width: 250px;
 }
 /* myAccountPage */
-
-
-
-
