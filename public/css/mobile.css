@@ -1,34 +1,28 @@
-header>div>span
-{
+header > div > span {
     text-align: center;
     font-size: 14px;
 }
-header>div>span.pageLink
-{
+header > div > span.pageLink {
     padding: 3px 10px;
     border: 3px solid white;
 }
-.headerLeft
-{
+.headerLeft {
     padding: 20px;
 }
-.message
-{
+.message {
     font-size: 12px;
 }
 
-header,footer
-{
-    height: 10vh;
+header,
+footer {
+    height: 10%;
 }
 
-.contentContainer
-{
-    height: 80vh;
+.contentContainer {
+    height: 80%;
 }
 
-.post
-{
+.post {
     margin-bottom: 0px;
     margin-top: 20px;
     max-height: 190px;
@@ -36,96 +30,81 @@ header,footer
     word-break: break-all;
     /* word-wrap: break-word; */
 }
-.post .postUserName
-{
+.post .postUserName {
     font-size: 12px;
 }
-.post .postDate
-{
+.post .postDate {
     font-size: 10px;
 }
-.post .postContent
-{
+.post .postContent {
     max-height: 150px;
 }
-.post:first-child
-{
-    margin-top:30px ;
+.post:first-child {
+    margin-top: 30px;
 }
 
 /* globalPage  */
-.globalPageContainer
-{
+.globalPageContainer {
     flex-direction: column-reverse;
 }
-.globalPageContainer .writePost button
-{
+.globalPageContainer .writePost button {
     margin-bottom: 20px;
 }
-.globalPageContainer .writePost textarea
-{
-    height:130px;
+.globalPageContainer .writePost textarea {
+    height: 130px;
 }
 
- .allPosts
-{
+.allPosts {
 }
-.allPosts::before
-{
-    left:50%;
+.allPosts::before {
+    left: 50%;
     justify-content: center;
     align-items: center;
     display: flex;
     font-size: 13px;
-    min-width:80px;
+    min-width: 80px;
     max-width: 120px;
     height: 20px;
     padding: 3px;
 }
 /* globalPage  */
 
-.userProfileContainer .userInfo
- {
+.userProfileContainer .userInfo {
     max-width: 100%;
- }
- .userInfo .info
- {
-     font-size: 14px;
-     margin: 13px 10px 0px 10px;
- }
- .userInfo::before
- {
-    left:50%;
+}
+.userInfo .info {
+    font-size: 14px;
+    margin: 13px 10px 0px 10px;
+}
+.userInfo::before {
+    left: 50%;
     justify-content: center;
     align-items: center;
     display: flex;
     font-size: 12px;
-    width:100px;
+    width: 100px;
     height: 18px;
     padding: 3px;
     z-index: 1000;
- }
+}
 
 /* accountPage */
-.userProfileContainer
-{
+.userProfileContainer {
     flex-direction: column-reverse;
 }
 
-.userProfileContainer .allPosts::before
-{
-    left :50%;
+.userProfileContainer .allPosts::before {
+    left: 50%;
 }
 /* accountPage */
 
 /* myPage */
-.myProfileContainer .userInfo
-{
+.myProfileContainer .userInfo {
     margin-bottom: 50px;
     border: none;
 }
-.myProfileContainer .editAccountBtn,.myProfileContainer .deleteAccountBtn
-{
+.myProfileContainer .editAccountBtn,
+.myProfileContainer .deleteAccountBtn {
     min-width: 130px;
     display: flex;
     justify-content: center;
@@ -134,20 +113,15 @@ header,footer
     height: 30px;
     bottom: 20px;
 }
-.myProfileContainer .deleteAccountBtn
-{
-    right:20px;
-    left:auto;
+.myProfileContainer .deleteAccountBtn {
+    right: 20px;
+    left: auto;
 }
-.myProfileContainer
-{
+.myProfileContainer {
 }
 /* myPage */
 
-
-
-footer
-{
+footer {
     text-align: center;
     font-size: 14px;
     padding: 1px 20px;
